@@ -1,0 +1,19 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+
+# Main.scss includes all other styling files. Use this file to generate and concatenate all styling files.
+---
+@charset "utf-8";
+
+
+
+/*************\
+ * Variables *
+\*************/
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "bs-overrides"
+;

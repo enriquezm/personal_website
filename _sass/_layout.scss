@@ -1,0 +1,54 @@
+/**********************\
+ * TABLE OF CONTENTS: *
+\**********************/
+
+// 1. HOME PAGE STYLING
+// 2. SINGLE PAGE STYLING
+// 3. SINGLE POST STYLING
+
+
+// 1. Home Page Styling \\
+.jumbotron {
+  h1 {
+    font-weight: 700;
+  }
+}
+
+.section {
+  padding: 15px;
+  .section-heading {
+    font-weight: 700;
+  }
+  .post-block {
+    .post-link {
+      color: #4A4A4A;
+      font-weight: 700;
+    }
+    .post-category {
+      color: #ED5565;
+      font-weight: 700;
+    }
+    .post-date {
+      color: #9B9B9B;
+    }
+  }
+
+  // Index grid layout
+  .grid-layout {
+    .grid-block {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// 2. Single Page Layout
+.page {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
+// 3. Single Post Layout
+.post {
+
+}

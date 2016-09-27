@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="jumbotron">
+    <h1>User Experience <b>Designer</b> and <br> Front End <b>Developer</b></h1>
+    <p class="faded-text">Satifying users' behaviors, needs, and goals through minimal design.</p>
+  </div>
+
+  <!-- Project List-->
+  <div class="section">
+    <h1 class="section-heading">Recent Work</h1>
+    <p class="faded-text">Some personal and client projects.</p>
+    <hr />
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <div class="post-block">
+        <li>
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+              <p class="post-category">{{ post.categories[0] | upcase }}</p>
+              <p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p>
+            </div>
+            <div class="col-xs-12 col-md-8">
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </div>
+        </li>
+      </div>
+      <hr />
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- How I Work -->
+  <div class="section">
+    <h1 class="section-heading">My Process</h1>
+    <p class="faded-text">Every project can vary, but this is my general process.</p>
+    <hr />
+    <ul class="grid-layout">
+      <div class="row">
+        <div class="col-xs-12 col-md-4 grid-block">
+          <img class="img-responsive" src="http://placehold.it/200x200" />
+          <p>Idea</p>
+        </div>
+        <div class="col-xs-12 col-md-4 grid-block">
+          <img class="img-responsive" src="http://placehold.it/200x200" />
+          <p>Sketch</p>
+        </div>
+        <div class="col-xs-12 col-md-4 grid-block">
+          <img class="img-responsive" src="http://placehold.it/200x200" />
+          <p>Wireframe</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 grid-block">
+          <img class="img-responsive" src="http://placehold.it/200x200" />
+          <p>Test</p>
+        </div>
+        <div class="col-xs-12 col-md-4 grid-block">
+          <img class="img-responsive" src="http://placehold.it/200x200" />
+          <p>Mockup</p>
+        </div>
+        <div class="col-xs-12 col-md-4 grid-block">
+          <img class="img-responsive" src="http://placehold.it/200x200" />
+          <p>Develop</p>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+</div>
