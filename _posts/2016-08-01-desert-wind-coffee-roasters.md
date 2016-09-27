@@ -5,8 +5,7 @@ date:   2016-08-01 13:50:18 -0700
 categories: "redesign"
 ---
 
-### Overview
-Primary plan for the website was to redesign it completely. Reason being that the website was not accurate with what the coffee shop offered, consistency was lacking, and the site was not responsive.
+Website redesign for a small mom & pop coffee shop.
 
 ### Team members and my role
 The DWCR Website Redesign team consists of 3 members, including myself. Two members are fairly new to the user experience, web design/development field, and so for this project my role is to act as a guide and head of the user experience, design, and development for the project. Main goal is to help the two members get into the field and come out with the skills and tools to design and develop their own websites in the future.

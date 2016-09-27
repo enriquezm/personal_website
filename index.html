@@ -5,71 +5,162 @@ layout: default
 <div class="home">
 
   <div class="jumbotron">
-    <h1>User Experience <b>Designer</b> and <br> Front End <b>Developer</b></h1>
-    <p class="faded-text">Satifying users' behaviors, needs, and goals through minimal design.</p>
+    <div class="container">
+      <h1>User Experience <b>Designer</b> and <br> Front End <b>Developer</b></h1>
+      <p class="faded-text">
+        I'm a UX Developer focusing on users' behaviors, needs, and goals.
+      </p>
+    </div>
   </div>
+
+  <!-- Soft Skills Section -->
+  <div class="section section-bg-dark text-center">
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+        <h4>Proactive</h4>
+        <p class="faded-text">
+          There are always challenges and obstacles that come out of nowhere. That is why I like to design a flexible plan to help me stay proactive throughout the process.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+        <h4>Passionate</h4>
+        <p class="faded-text">
+          In order to create anything great, you need to have a passion for it. I have a passion for designing and developing for the web. Whether it is for myself or a client.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+        <h4>Communicator</h4>
+        <p class="faded-text">
+          You need to have fenominal communication going on between designer/developer and client. I try to not just listen to what my clients want, but also try to understand why they want it.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        <h4>Open-minded</h4>
+        <p class="faded-text">
+          You should never stick to one way of doing things. With every project, I hope to grow and learn something new. I'm always open to new ideas or concepts. No matter how crazy or insane they might sound.
+        </p>
+      </div>
+    </div><!-- .row -->
+    </div><!-- .container -->
+  </div><!-- .section -->
 
   <!-- Project List-->
   <div class="section">
-    <h1 class="section-heading">Recent Work</h1>
-    <p class="faded-text">Some personal and client projects.</p>
-    <hr />
-    <ul class="post-list">
+    <div class="container">
+      <h1 class="section-heading text-center">Recent Work</h1>
+      <p class="faded-text text-center">
+        Some personal and client projects.
+      </p>
+      <div class="row">
       {% for post in site.posts %}
-      <div class="post-block">
-        <li>
-          <div class="row">
-            <div class="col-xs-12 col-md-4">
-              <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-              <p class="post-category">{{ post.categories[0] | upcase }}</p>
-              <p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p>
-            </div>
-            <div class="col-xs-12 col-md-8">
-              <p>{{ post.excerpt }}</p>
-            </div>
-          </div>
-        </li>
+      <div class="post-block col-xs-12 col-md-4">
+        <h2>{{ post.title }}</a></h2>
+        <p class="post-description">{{ post.excerpt }}</p>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          <span class="post-category">More</span>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
       </div>
-      <hr />
       {% endfor %}
-    </ul>
+      </div>
+    </div>
   </div>
 
-  <!-- How I Work -->
-  <div class="section">
-    <h1 class="section-heading">My Process</h1>
-    <p class="faded-text">Every project can vary, but this is my general process.</p>
-    <hr />
-    <ul class="grid-layout">
-      <div class="row">
-        <div class="col-xs-12 col-md-4 grid-block">
-          <img class="img-responsive" src="http://placehold.it/200x200" />
-          <p>Idea</p>
-        </div>
-        <div class="col-xs-12 col-md-4 grid-block">
-          <img class="img-responsive" src="http://placehold.it/200x200" />
-          <p>Sketch</p>
-        </div>
-        <div class="col-xs-12 col-md-4 grid-block">
-          <img class="img-responsive" src="http://placehold.it/200x200" />
-          <p>Wireframe</p>
-        </div>
+  <!-- skills section -->
+  <div class="section section-bg-dark">
+    <div class="container">
+      <h1 class="section-heading text-center">Skills</h1>
+      <p class="section-description faded-text text-center">Some skills.</p>
+      <div class="grid-layout">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-1 text-center">
+            <div class="c100 p75 salmon center">
+          	  <span>75%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>HTML/CSS</h4>
+            <p class="faded-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-2 text-center">
+            <div class="c100 p60 salmon center">
+          	  <span>60%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>JAVASCRIPT</h4>
+            <p class="faded-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-3 text-center">
+            <div class="c100 p40 salmon center">
+          	  <span>40%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>PYTHON</h4>
+            <p class="faded-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-4 text-center">
+            <div class="c100 p75 salmon center">
+          	  <span>75%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>USABILITY</h4>
+            <p class="faded-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-5 text-center">
+            <div class="c100 p90 salmon center">
+          	  <span>90%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>WIREFRAMING</h4>
+            <p class="faded-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-6
+         text-center">
+            <div class="c100 p85 salmon center">
+          	  <span>85%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>RESEARCH</h4>
+            <p class="faded-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
+            </p>
+          </div>
+        </div><!-- .row -->
+
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-4 grid-block">
-          <img class="img-responsive" src="http://placehold.it/200x200" />
-          <p>Test</p>
-        </div>
-        <div class="col-xs-12 col-md-4 grid-block">
-          <img class="img-responsive" src="http://placehold.it/200x200" />
-          <p>Mockup</p>
-        </div>
-        <div class="col-xs-12 col-md-4 grid-block">
-          <img class="img-responsive" src="http://placehold.it/200x200" />
-          <p>Develop</p>
-        </div>
-      </div>
-    </ul>
+    </div><!-- .container -->
   </div>
 
 </div>

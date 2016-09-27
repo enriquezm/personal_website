@@ -15,11 +15,25 @@
 }
 
 .section {
-  padding: 15px;
+  padding: 30px;
   .section-heading {
     font-weight: 700;
   }
   .post-block {
+    // TODO: Incorporate hover click.
+    // &:hover {
+    //   background-color: red;
+    // }
+    margin-bottom: 20px;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+    p {
+      color: #9B9B9B;
+    }
+    .glyphicon {
+      font-size: 12px
+    }
     .post-link {
       color: #4A4A4A;
       font-weight: 700;
@@ -36,8 +50,47 @@
   // Index grid layout
   .grid-layout {
     .grid-block {
-      margin-bottom: 20px;
+      padding: 30px 15px;
     }
+    .bg-color-1 {
+      background-color: lighten(#373535, 5%);
+    }
+    .bg-color-2 {
+      background-color: lighten(#373535, 7%);
+    }
+    .bg-color-3 {
+      background-color: lighten(#373535, 9%);
+    }
+    .bg-color-4 {
+      background-color: lighten(#373535, 11%);
+    }
+    .bg-color-5 {
+      background-color: lighten(#373535, 13%);
+    }
+    .bg-color-6 {
+      background-color: lighten(#373535, 15%);
+    }
+  }
+}
+.section-bg-salmon {
+  background-color: #ED5565;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: white;
+  }
+  p {
+    margin-bottom: 50px;
+  }
+}
+.section-bg-dark {
+  padding: 50px 0;
+  background-color: #292828;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: white;
+  }
+  p.section-description {
+    margin-bottom: 50px;
   }
 }
 
