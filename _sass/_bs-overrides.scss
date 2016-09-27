@@ -3,6 +3,12 @@
     padding-top: 25px;
     border: none;
     background-color: transparent;
+    .navbar-brand {
+      font-weight: 700;
+    }
+    ul > li > a {
+      font-weight: 700;
+    }
   }
 }
 .home {
