@@ -6,8 +6,17 @@
     .navbar-brand {
       font-weight: 700;
     }
-    ul > li > a {
-      font-weight: 700;
+    ul > li {
+      a {
+        font-weight: 700;
+        &#contact-btn {
+          color: white;
+          background-color: #ED5565;
+          &:hover {
+            background-color: lighten(#ED5565, 3%);
+          }
+        }
+      }
     }
   }
 }

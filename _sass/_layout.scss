@@ -15,12 +15,35 @@
 }
 .landing-hero {
   height: 80vh;
+  .glyphicon-hand-down {
+    padding-top: 10%;
+    font-size: 4em;
+    /* ANIMATION */
+    animation-name: pointDown;
+    animation-duration: .2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.5s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+  }
+}
+@keyframes pointDown {
+  from {
+    top: 0;
+  }
+  to {
+    top: 30px;
+  }
 }
 
 .section {
   padding: 30px;
   .section-heading {
     font-weight: 700;
+  }
+  .section-description {
+    margin-bottom: 30px;
   }
   .item-block {
     margin-bottom: 30px;
@@ -77,7 +100,44 @@
       background-color: lighten(#373535, 15%);
     }
   }
+
+  form {
+    input, textarea {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 3px solid #b1acac;
+    }
+    input {
+      height: 40px;
+    }
+    textarea {
+      resize: none;
+    }
+    .submit-btn {
+      background-color: #ED5565;
+      border: none;
+      color: white;
+      &:hover {
+        background-color: lighten(#ED5565, 3%);
+      }
+    }
+  }
 }
+
+// FOOTER
+.site-footer {
+  color: white;
+  .social-link {
+    margin: 0 7px;
+    margin-bottom: 20px;
+    color: white;
+    &:hover {
+      color: #ED5565;
+    }
+  }
+}
+// sections with background colors
 .section-bg-salmon {
   background-color: #ED5565;
   h1, h2, h3, h4, h5, h6 {
@@ -104,6 +164,13 @@
 .page {
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+  }
+  .page-header {
+    background-color: #292828;
+    color: white;
+  }
+  .page-content {
+
   }
 }
 

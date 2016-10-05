@@ -17,5 +17,11 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+github_link: https://github.com/enriquezm
+linkedin_link: https://www.linkedin.com/in/mylesenriquez
+instagram_link: https://www.instagram.com/ssmyless/
+
+copyright: Myles Enriquez, 2016
+
 # Build settings
 markdown: kramdown
