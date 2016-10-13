@@ -63,6 +63,13 @@
     .glyphicon {
       font-size: 12px
     }
+    .post-type {
+      margin-top: 40px;
+      padding: 5px 5px;
+      color: white;
+      font-weight: 700;
+      background-color:#ED5565
+    }
     .post-link {
       color: #4A4A4A;
       font-weight: 700;
@@ -140,9 +147,9 @@
 // sections with background colors
 .section-bg-salmon {
   background-color: #ED5565;
+  color: white;
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: white;
   }
   p {
     margin-bottom: 50px;
@@ -176,7 +183,56 @@
 
 // 3. Single Post Layout
 .post {
-
+  .post-header {
+    height: 70vh;
+    color: white;
+    background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/images/placeholder-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1262px 545px;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+    h1, h2, h3, h4, h5, h6, {
+      padding-top: 25%;
+    }
+  }
+  .post-content {
+    padding: 30px 0;
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+    h3 {
+      color: #ED5565;
+    }
+    p {
+      color: #9e9a9a;
+    }
+    img {
+      width: 100%;
+    }
+    .project-details {
+      padding: 20px 15px;
+      background-color: #292828;
+      color: white;
+      p {
+        &.queded {
+          color: grey;
+        }
+        &.in-progress {
+          color: #ED5565;
+        }
+        &.completed {
+          color: #5BA29A;
+        }
+      }
+    }
+  }
 }
 
 // TRANSITIONS
