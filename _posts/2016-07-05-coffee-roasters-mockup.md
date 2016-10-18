@@ -13,7 +13,7 @@ status: "completed"
 
 I created a mockup of a made up coffee roasting business called: Home Roasters. This project was just for practice and somewhat of a personal challenge. Through the designing process I made some UX design based decisions, which are described below.
 
-<hr/ >
+<hr />
 
 ![]({{ site.baseurl }}/images/post-images/2016-07-05-mockup-home-roasters/img00.png)
 
@@ -52,3 +52,5 @@ Once customers are interested and know how they will benefit from your product, 
 ![]({{ site.baseurl }}/images/post-images/2016-07-05-mockup-home-roasters/img04.png)
 
 ## Conclusion
+
+This project was a simple yet challenging one that I put upon myself. I learned a lot but one thing I would change next time would be to actually test the mock up on users to see their reactions.

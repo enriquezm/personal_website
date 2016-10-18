@@ -36,25 +36,31 @@ layout: default
       </p>
       <div id="lazy-container" class="row">
       <div class="col-xs-12 col-sm-6 col-md-4 item-block">
-        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-        <h4>Design</h4>
-        <p class="faded-text">
-          I focus on web and experience designing through sketches, wireframes, mockups and prototypes.
-        </p>
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+          <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+          <h4>Design</h4>
+          <p>
+            I focus on web and experience designing through sketches, wireframes, mockups and prototypes.
+          </p>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 item-block lazy">
-        <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
-        <h4>Development</h4>
-        <p class="faded-text">
-          I focus on building your Front End using languages and frameworks like JavaScript and/or Angular.
-        </p>
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+          <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+          <h4>Development</h4>
+          <p class="faded-text">
+            I focus on building your Front End using languages and frameworks like JavaScript and/or Angular.
+          </p>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 item-block">
-        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-        <h4>User Experience</h4>
-        <p class="faded-text">
-          I focus on making something your users will want to use through research and testing.
-        </p>
+        <div class="col-xs-12 col-md-10 col-md-offset-1">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          <h4>User Experience</h4>
+          <p class="faded-text">
+            I focus on making something your users will want to use through research and testing.
+          </p>
+        </div>
       </div>
     </div><!-- .row -->
     </div><!-- .container -->
@@ -63,22 +69,23 @@ layout: default
   <!-- Project List-->
   <div class="section">
     <div class="container">
-      <h1 class="section-heading text-center">Work</h1>
+      <h1 id="work-header" class="section-heading text-center">Work</h1>
       <p class="faded-text text-center">
         Some personal and client projects.
       </p>
       <div class="row">
       {% for post in site.posts %}
-      <div class="post-block col-xs-12 col-md-4">
+      <div class="post-block col-xs-12 col-sm-6 col-md-4">
         <div class="row">
-          <div class="col-xs-4">
+          <div class="col-xs-5 col-sm-4">
             <div class="post-type text-center">{{ post.type }}</div>
           </div>
         </div>
         <h2>{{ post.title }}</a></h2>
+        <p class="post-status">{{ post.status | upcase }}</p>
         <p class="post-description">{{ post.blurb }}</p>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          <span class="post-category">More</span>
+          <span class="post-link-text">View Project</span>
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         </a>
       </div>
@@ -88,7 +95,7 @@ layout: default
   </div>
 
   <!-- Facts section -->
-  <div class="section section-bg-salmon facts-section">
+  <div class="section section-bg-lime facts-section">
     <div class="container text-center">
       <div class="row">
         <div class="col-md-4">
@@ -101,7 +108,7 @@ layout: default
         </div>
         <div class="col-md-4">
           <h1 class="counter" data-count="5600">0</h1>
-          <p>Bugs terminated</p>
+          <p>Pixels pushed</p>
         </div>
       </div>
     </div>
@@ -115,7 +122,7 @@ layout: default
       <div class="grid-layout">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-1 text-center">
-            <div class="c100 p75 salmon center">
+            <div class="c100 p75 lime center">
           	  <span>75%</span>
           	  <div class="slice">
           	    <div class="bar"></div>
@@ -123,12 +130,9 @@ layout: default
           	  </div>
           	</div>
             <h4>HTML5/CSS3</h4>
-            <p class="faded-text">
-              Transformations, animations, gradients, grid layouts. All that good stuff.
-            </p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-2 text-center">
-            <div class="c100 p60 salmon center">
+            <div class="c100 p60 lime center">
           	  <span>60%</span>
           	  <div class="slice">
           	    <div class="bar"></div>
@@ -136,65 +140,168 @@ layout: default
           	  </div>
           	</div>
             <h4>JAVASCRIPT</h4>
-            <p class="faded-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
-            </p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-3 text-center">
-            <div class="c100 p40 salmon center">
-          	  <span>40%</span>
+            <div class="c100 p20 lime center">
+          	  <span>20%</span>
           	  <div class="slice">
           	    <div class="bar"></div>
           	    <div class="fill"></div>
           	  </div>
           	</div>
-            <h4>PYTHON</h4>
-            <p class="faded-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis id magna id tristique.
-            </p>
+            <h4>NodeJS</h4>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-4 text-center">
-            <div class="c100 p75 salmon center">
+            <div class="c100 p20 lime center">
+          	  <span>20%</span>
+          	  <div class="slice">
+          	    <div class="bar"></div>
+          	    <div class="fill"></div>
+          	  </div>
+          	</div>
+            <h4>AngularJS</h4>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-5 text-center">
+            <div class="c100 p75 lime center">
           	  <span>75%</span>
           	  <div class="slice">
           	    <div class="bar"></div>
           	    <div class="fill"></div>
           	  </div>
           	</div>
-            <h4>USABILITY</h4>
-            <p class="faded-text">
-              Making sure your users can actually use your app/website will make them return.
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-5 text-center">
-            <div class="c100 p90 salmon center">
-          	  <span>90%</span>
-          	  <div class="slice">
-          	    <div class="bar"></div>
-          	    <div class="fill"></div>
-          	  </div>
-          	</div>
-            <h4>WIREFRAMING</h4>
-            <p class="faded-text">
-              Figuring out the foundation is key to building a successfull app/website.
-            </p>
+            <h4>Sketch3</h4>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 grid-block bg-color-6
          text-center">
-            <div class="c100 p85 salmon center">
-          	  <span>85%</span>
+            <div class="c100 p65 lime center">
+          	  <span>65%</span>
           	  <div class="slice">
           	    <div class="bar"></div>
           	    <div class="fill"></div>
           	  </div>
           	</div>
-            <h4>RESEARCH</h4>
-            <p class="faded-text">
-              Research is crucial to find out your competition and how you can get ahead.
-            </p>
+            <h4>Illustrator</h4>
           </div>
         </div><!-- .row -->
 
+      </div><!-- .grid-layout -->
+      <div class="row text-center">
+        <h1 class="section-heading">Others</h1>
+        <p class="section-description faded-text">Some other tools I use</p>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>NPM</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                  40%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Bower</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                  45%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Gulp.js</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                  30%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Vagrant</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                  30%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Git</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                  70%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Github</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Slack</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Gitter</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                  80%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <p>Atom</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                  85%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div><!-- .container -->
   </div>

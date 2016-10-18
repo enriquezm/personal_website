@@ -39,6 +39,9 @@
 
 .section {
   padding: 30px;
+  p {
+    color: #7f8ca8;
+  }
   .section-heading {
     font-weight: 700;
   }
@@ -58,7 +61,7 @@
       font-weight: 700;
     }
     p {
-      color: #9B9B9B;
+      color: #76829c;
     }
     .glyphicon {
       font-size: 12px
@@ -68,14 +71,18 @@
       padding: 5px 5px;
       color: white;
       font-weight: 700;
-      background-color:#ED5565
+      background-color: #80db9c;
     }
-    .post-link {
-      color: #4A4A4A;
+    .post-status {
+      color: #4f5b77;
       font-weight: 700;
     }
-    .post-category {
-      color: #ED5565;
+    .post-link {
+      font-weight: 700;
+      color: #80db9c;
+    }
+    .post-link-text {
+      color: #80db9c;
       font-weight: 700;
     }
     .post-date {
@@ -89,22 +96,22 @@
       padding: 30px 15px;
     }
     .bg-color-1 {
-      background-color: lighten(#373535, 5%);
+      background-color: lighten(#4f5b77, 5%);
     }
     .bg-color-2 {
-      background-color: lighten(#373535, 7%);
+      background-color: lighten(#4f5b77, 7%);
     }
     .bg-color-3 {
-      background-color: lighten(#373535, 9%);
+      background-color: lighten(#4f5b77, 9%);
     }
     .bg-color-4 {
-      background-color: lighten(#373535, 11%);
+      background-color: lighten(#4f5b77, 11%);
     }
     .bg-color-5 {
-      background-color: lighten(#373535, 13%);
+      background-color: lighten(#4f5b77, 13%);
     }
     .bg-color-6 {
-      background-color: lighten(#373535, 15%);
+      background-color: lighten(#4f5b77, 15%);
     }
   }
 
@@ -122,11 +129,12 @@
       resize: none;
     }
     .submit-btn {
-      background-color: #ED5565;
+      background-color: #80DB9c;
+      border-radius: 3px;
       border: none;
       color: white;
       &:hover {
-        background-color: lighten(#ED5565, 3%);
+        background-color: lighten(#80db9c, 3%);
       }
     }
   }
@@ -138,26 +146,27 @@
   .social-link {
     margin: 0 7px;
     margin-bottom: 20px;
-    color: white;
+    color: #76829c;
     &:hover {
-      color: #ED5565;
+      color: #80db9c;
     }
   }
 }
 // sections with background colors
-.section-bg-salmon {
-  background-color: #ED5565;
+.section-bg-lime {
+  background-color: #80db9c;
   color: white;
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
   }
   p {
     margin-bottom: 50px;
+    color: lighten(#90db9c, 20%);
   }
 }
 .section-bg-dark {
   padding: 50px 0;
-  background-color: #292828;
+  background-color: #4F5B77;
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: white;
@@ -183,52 +192,36 @@
 
 // 3. Single Post Layout
 .post {
-  .post-header {
-    height: 70vh;
-    color: white;
-    background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('/images/placeholder-image.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1262px 545px;
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 700;
-    }
-    h1, h2, h3, h4, h5, h6, {
-      padding-top: 25%;
-    }
-  }
   .post-content {
     padding: 30px 0;
+    font-size: 18px;
     h1, h2, h3, h4, h5, h6 {
       font-weight: 700;
     }
     h3 {
-      color: #ED5565;
+      color: #89db9c;
     }
     p {
-      color: #9e9a9a;
+      margin: 20px 0;
+      color: #716f6f;
     }
     img {
       width: 100%;
     }
     .project-details {
       padding: 20px 15px;
-      background-color: #292828;
+      background-color: #4f5b77;
       color: white;
       p {
+        color: #8b99b8;
         &.queded {
           color: grey;
         }
         &.in-progress {
-          color: #ED5565;
+          color: #fda58e;
         }
         &.completed {
-          color: #5BA29A;
+          color: #89db9c;
         }
       }
     }

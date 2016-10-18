@@ -1054,19 +1054,19 @@
   color: #5fd400;
 }
 
-/* SALMON */
-.c100.salmon .bar,
-.c100.salmon .fill {
-  border-color: #ED5565 !important;
+/* lime */
+.c100.lime .bar,
+.c100.lime .fill {
+  border-color: #80db9c !important;
 }
-.c100.salmon:hover > span {
-  color: #ED5565;
+.c100.lime:hover > span {
+  color: #80db9c;
 }
-.c100.salmon.dark .bar,
-.c100.salmon.dark .fill {
+.c100.lime.dark .bar,
+.c100.lime.dark .fill {
   border-color: #af3c48 !important;
 }
-.c100.salmon.dark:hover > span {
+.c100.lime.dark:hover > span {
   color: #af3c48;
 }
 

@@ -63,18 +63,40 @@ Exhale as the image compresses and inhale when the image expands. Just remember 
 
 ![]({{ site.baseurl }}/images/post-images/2016-10-06-anti-anxiety-breathing-app/img03.gif)
 
-### 4. Sketching
-
-Next part was making a couple of sketches for the actual application. I found the centralized idea for the app (visualized animation), I just needed to sketch and find a way to give the user a great experience when needed to use the app. The app had to be accessible, quick to deliver and not too complicated. We wanted to reduce anxiety, stress, etc. as soon as the app was in use. Not just when viewing the animation.
-
-### 5. Storyboard
+### 4. Storyboard
 
 To help and aid me in my designing decisions, I decided to storyboard my app to get a better perspective of what I need to incorporate. I wanted to portray 2 main situations that a user would be in when using the app.
 
-1. In a stressful situation, needs app fast.
-2. In a stressless situation, just wants to do some breathing exercises.
+1. Situation A: In a stressful situation, needs app fast.
+2. Situation B: In a stressless situation, just wants to do some breathing exercises.
 
-### 6. User Journeys
+Situation A:
+
+(1) User is dealing with a bad day at work. With all the customers coming in ordering their coffee, user has to keep up with the pace. Customers are rude and demanding a lot. (2) User needs to take a quick 5 min break and tells co-worker to man the bar while user steps back to take a breather. (3) User starts app, selects the type of breathing they need right now at the moment and starts their breathing exercises to calm down. (4) After a couple breaths, user feels better and steps back out to work.
+
+Situation A Quick Takeaways:
+
+- App needs to get to the point fast.
+- Breathing exercises should be simple, concise, and to the point.
+- There should be different timed exercises.
+- There should be different styles of breathing.
+
+Situation B:
+
+(1) User wants to do their daily breathing exercises for the day. They open the app and look through for the type of breathing they're looking for. (2) They find a session that is 10 mins long and find a comfortable seat to start their session. (3) After their session they feel relaxed and more focused. They enjoyed the session and want to save it for later.
+
+Situation B Quick Takeaways:
+
+- App needs to have different types of geometric shapes.
+- App needs variety. (times, colors, shapes, animations, sounds?)
+- App needs to have a 'favorites/profile' type of setting.
+- Breathing exercises should have varied speeds of breathing (ex fast to slow). Possibly make current breathing speed of user adjusted to app.
+
+### 5. User Journeys
+
+### 6. Sketching
+
+Next part was making a couple of sketches for the actual application. I found the centralized idea for the app (visualized animation), I just needed to sketch and find a way to give the user a great experience when needed to use the app. The app had to be accessible, quick to deliver and not too complicated. We wanted to reduce anxiety, stress, etc. as soon as the app was in use. Not just when viewing the animation.
 
 ### 7. Wireframing
 

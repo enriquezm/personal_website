@@ -11,9 +11,10 @@
         font-weight: 700;
         &#contact-btn {
           color: white;
-          background-color: #ED5565;
+          background-color: #80db9c;
+          border-radius: 3px;
           &:hover {
-            background-color: lighten(#ED5565, 3%);
+            background-color: lighten(#80db9c, 3%);
           }
         }
       }
@@ -32,6 +33,12 @@
 }
 
 .glyphicon {
-  color: #ED5565;
+  color: #80DB9C;
   font-size: 24px;
+}
+
+// PROGRESS BAR
+.progress-bar {
+  background-color: #80db9c;
+  box-shadow: none;
 }
